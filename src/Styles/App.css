@@ -1,0 +1,127 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #c8c8c8;
+  position: relative;
+}
+
+.wholeApp {
+  position: absolute;
+  left: 50vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+  padding: 40px;
+}
+
+section {
+  margin-top: 20px;
+}
+
+section .sub-section {
+  margin: 5px 0;
+  border-top: 2px black solid;
+  padding-top: 10px;
+}
+
+.side2side {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0.6px 2px rgba(0, 0, 0, 0.651);
+          box-shadow: 0 0.6px 2px rgba(0, 0, 0, 0.651);
+  padding: 10px 10px;
+}
+
+.side2side > div {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 10px;
+}
+
+.side2side .income-div p {
+  color: green;
+}
+
+.side2side .expense-div {
+  border-left: 2px rgba(0, 0, 0, 0.651) solid;
+}
+
+.side2side .expense-div p {
+  color: #c70606;
+  font-weight: bold;
+}
+
+.history-pieces {
+  margin: 10px 0;
+}
+
+.history-pieces li {
+  margin: 10px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  grid-column-gap: 5px;
+  padding: 10px;
+  -webkit-box-shadow: 0 0.6px 2px rgba(0, 0, 0, 0.651);
+          box-shadow: 0 0.6px 2px rgba(0, 0, 0, 0.651);
+}
+
+.history-pieces li button {
+  display: none;
+  border: none;
+  background: none;
+  color: red;
+  font-weight: bold;
+}
+
+.history-pieces li:hover {
+  -webkit-transform: display 2s;
+          transform: display 2s;
+  -ms-grid-columns: .2fr 2fr 1fr;
+      grid-template-columns: .2fr 2fr 1fr;
+  background-color: rgba(48, 4, 90, 0.102);
+}
+
+.history-pieces li:hover button {
+  display: block;
+}
+
+.history-pieces li .amount {
+  text-align: end;
+}
+
+.input-div label {
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+.input-div .input {
+  width: 100%;
+  padding: 5px;
+  height: 3em;
+  border: 3px rgba(0, 0, 0, 0.651) solid;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.add_button {
+  width: 100%;
+  background-color: rgba(48, 4, 90, 0.767);
+  border: none;
+  color: white;
+  font-size: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+/*# sourceMappingURL=App.css.map */
